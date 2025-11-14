@@ -1,0 +1,153 @@
+/* Tablet Styles */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    header {
+        padding: 25px 20px;
+        margin-bottom: 25px;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .card {
+        padding: 25px;
+    }
+    
+    .step-indicator {
+        margin-bottom: 30px;
+    }
+    
+    .step-label {
+        font-size: 0.8rem;
+    }
+    
+    .result-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .verification-code {
+        gap: 8px;
+    }
+    
+    .verification-code input {
+        width: 45px;
+        height: 55px;
+    }
+    
+    .navigation-buttons {
+        flex-direction: column;
+    }
+}
+
+/* Mobile Styles */
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+    
+    .container {
+        padding: 0 10px;
+    }
+    
+    header {
+        padding: 20px 15px;
+        margin-bottom: 20px;
+    }
+    
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    .card {
+        padding: 20px;
+    }
+    
+    .card h2 {
+        font-size: 1.3rem;
+    }
+    
+    .step-indicator {
+        padding: 0 10px;
+    }
+    
+    .step-indicator::before {
+        left: 5%;
+        right: 5%;
+    }
+    
+    .step-number {
+        width: 30px;
+        height: 30px;
+        font-size: 0.9rem;
+    }
+    
+    .step-label {
+        font-size: 0.75rem;
+    }
+    
+    input, select {
+        padding: 12px 14px;
+    }
+    
+    button {
+        padding: 14px 20px;
+        font-size: 15px;
+    }
+    
+    .verification-code {
+        gap: 6px;
+    }
+    
+    .verification-code input {
+        width: 40px;
+        height: 50px;
+        font-size: 1.2rem;
+    }
+    
+    .privacy-consent {
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .privacy-consent input {
+        align-self: flex-start;
+    }
+}
+
+/* Large Screen Styles */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1000px;
+    }
+}
+
+/* High DPI Screens */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .card {
+        border: 0.5px solid var(--border);
+    }
+}
+
+/* Print Styles */
+@media print {
+    .step-indicator,
+    .navigation-buttons,
+    .privacy-section,
+    footer {
+        display: none;
+    }
+    
+    .card {
+        box-shadow: none;
+        border: 1px solid #000;
+    }
+    
+    .result-section {
+        display: block !important;
+    }
+}
